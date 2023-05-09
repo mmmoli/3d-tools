@@ -1,0 +1,17 @@
+{
+  "name": "3d-tools",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "commit": "git-cz",
+    "prepare": "husky install"
+  },
+  "private": true,
+  "devDependencies": {
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "devmoji": "^2.3.0",
+    "husky": "^8.0.3",
+    "nx": "16.1.3"
+  }
+}
