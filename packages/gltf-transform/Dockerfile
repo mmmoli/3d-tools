@@ -1,7 +1,4 @@
-FROM ianwalter/pnpm:v1.4.0
+FROM node:bullseye-slim
 
-ARG VERSION=3.4.2
-RUN pnpm i @gltf-transform/cli@${VERSION} --global
-
-ENTRYPOINT ["gltf-transform"]
-CMD ["--stats", '-b']
+ARG VERSION=3.5.1
+RUN npm install @gltf-transform/cli@${VERSION} --global
